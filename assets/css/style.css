@@ -1,0 +1,87 @@
+html,
+body {
+    /* min-height: 100vh; */
+    background: url(../cartas/cespd.jpg) no-repeat fixed;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* display: grid; */
+}
+
+.header {
+    /* width: auto; */
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    /* margin-left: auto; */
+    font-size: 30px;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -60px;
+}
+
+#conputadora-cartas,
+#jugador-cartas {
+    height: 220px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    padding: 7px 10px;
+    font-family: helvetica;
+    position: relative;
+    font-size: larger;
+}
+
+.btn span {
+    position: absolute;
+    background-color: crimson;
+    transition: all 0.2s ease-out;
+}
+
+.btn span:nth-child(odd) {
+    width: 0;
+    height: 1px;
+}
+
+.btn span:nth-child(even) {
+    height: 0;
+    width: 1px;
+}
+
+.btn span:first-child {
+    left: 0;
+    top: 0px;
+}
+
+.btn span:nth-child(2) {
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.btn span:nth-child(3) {
+    right: 0;
+    bottom: 0;
+    transition-delay: 0.4s;
+}
+
+.btn span:last-child {
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+}
+
+.btn:hover span:nth-child(odd) {
+    width: 100%;
+}
+
+.btn:hover span:nth-child(even) {
+    height: 100%;
+}
